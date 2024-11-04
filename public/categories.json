@@ -1,0 +1,26 @@
+[
+    {
+        "_id":"67247392510d906a95dd5df6",
+        "name":"Teacher",
+        "serviceImg":"https://example.com/images/teacher.jpg",
+        "colorPrimary":"#4CAF50",
+        "colorSecondary":"#81C784"
+    },
+    {
+        "_id":"67247392510d906a95dd5df7",
+        "name":"Doctor",
+        "serviceImg":"https://example.com/images/doctor.jpg",
+        "colorPrimary":"#FF5722",
+        "colorSecondary":"#FF8A65"
+    },
+    {
+        "_id":"67247392510d906a95dd5df8",
+        "name":"Lawyer",
+        "serviceImg":"https://example.com/images/lawyer.jpg",
+        "colorPrimary":"#3F51B5",
+        "colorSecondary":"#7986CB"
+    }
+]
+
+
+
