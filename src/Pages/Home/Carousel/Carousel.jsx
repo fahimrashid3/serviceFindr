@@ -13,7 +13,7 @@ import img6 from "../../../assets/home/06.png";
 
 const Carousel = () => {
   return (
-    <div>
+    <div className="mb-12 md:mb-20">
       <Swiper
         spaceBetween={30}
         centeredSlides={true}

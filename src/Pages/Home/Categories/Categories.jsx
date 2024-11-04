@@ -15,7 +15,7 @@ import SectionTitle from "../../../Compunents/SectionTitle/SectionTitle";
 
 const Categories = () => {
   return (
-    <div>
+    <div className="mb-12 md:mb-24 lg:mb-32">
       <SectionTitle
         heading={"All categories"}
         subHeading={"Explore more"}

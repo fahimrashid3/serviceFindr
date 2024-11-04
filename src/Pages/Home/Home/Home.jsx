@@ -2,6 +2,7 @@ import SectionBanner from "../../../Compunents/SectionBanner/SectionBanner";
 import Carousel from "../Carousel/Carousel";
 import Categories from "../Categories/Categories";
 import img from "../../../assets/home/HomePageBanner.png";
+import PopularServices from "../PopularServices/PopularServices";
 
 const Home = () => {
   const title = "ServiceFinder";
@@ -16,6 +17,7 @@ const Home = () => {
         title={title}
         descriptions={descriptions}
       ></SectionBanner>
+      <PopularServices></PopularServices>
     </div>
   );
 };

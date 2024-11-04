@@ -1,5 +1,3 @@
-/* eslint-disable react/prop-types */
-
 const SectionBanner = ({ img, title, descriptions }) => {
   return (
     <div
