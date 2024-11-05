@@ -31,25 +31,25 @@ const Categories = () => {
       >
         <SwiperSlide className=" cursor-pointer">
           <img src={img1} alt="" />
-          <h3 className="text-4xl uppercase text-center text-yellow-500 -mt-16">
+          <h3 className="text-4xl uppercase text-center text-primary -mt-16">
             Teacher
           </h3>
         </SwiperSlide>
         <SwiperSlide className=" cursor-pointer">
           <img src={img2} alt="" />
-          <h3 className="text-4xl uppercase text-center text-yellow-500 -mt-16">
+          <h3 className="text-4xl uppercase text-center text-primary -mt-16">
             Doctor
           </h3>
         </SwiperSlide>
         <SwiperSlide className=" cursor-pointer">
           <img src={img3} alt="" />
-          <h3 className="text-4xl uppercase text-center text-yellow-500 -mt-16">
+          <h3 className="text-4xl uppercase text-center text-primary -mt-16">
             Lawyer
           </h3>
         </SwiperSlide>
         <SwiperSlide className=" cursor-pointer">
           <img src={img4} alt="" />
-          <h3 className="text-4xl uppercase text-center text-yellow-500 -mt-16">
+          <h3 className="text-4xl uppercase text-center text-primary -mt-16">
             Electrician
           </h3>
         </SwiperSlide>

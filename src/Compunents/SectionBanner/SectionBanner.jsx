@@ -6,7 +6,8 @@ const SectionBanner = ({ img, title, descriptions }) => {
     >
       <div
         className="
-      bg-white dark:bg-dark-800 text-dark-900 dark:text-white lg:p-20 md:p-12 p-7 lg:space-y-8 md:space-y-5 space-y-3 rounded-lg opacity-85
+      bg-white dark:bg-dark-800 text-dark-900 dark:text-white lg:p-20 md:p-12 p-7 lg:space-y-8 md:space-y-5 space-y-3 
+      rounded-lg opacity-85 hover:opacity-100 hover:duration-500
       "
       >
         <h1 className="text-4xl text-center lg:font-semibold">{title}</h1>

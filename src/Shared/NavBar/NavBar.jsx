@@ -13,36 +13,16 @@ const NavBar = () => {
         <NavLink to="/">Home</NavLink>
       </li>
       <li>
-        <div className="dropdown dropdown-bottom dropdown-hover">
-          <div>
-            <NavLink to="/services" tabIndex={0} role="button">
-              Our Services
-            </NavLink>
-          </div>
-          <ul
-            tabIndex={0}
-            className="dropdown-content menu bg-dark-900 rounded-box z-[1] w-40 p-2 shadow"
-          >
-            <li>
-              <a>Doctor</a>
-            </li>
-            <li>
-              <a>Lawyer</a>
-            </li>
-            <li>
-              <a>Teacher</a>
-            </li>
-          </ul>
-        </div>
+        <NavLink to="/services">Our Services</NavLink>
       </li>
       <li>
         <NavLink to="/contactUs">Contact Us</NavLink>
       </li>
       <li>
-        <NavLink to="/dashboard">Dashboard</NavLink>
+        <NavLink to="/appointment">Appointment</NavLink>
       </li>
       <li>
-        <NavLink to="/appointment">Appointment</NavLink>
+        <NavLink to="/dashboard">Dashboard</NavLink>
       </li>
     </>
   );

@@ -3,11 +3,11 @@ react dom
 tailwind
 daisyUi
 react icons
-React Helmet
-swiper
+React Helmet from reach awesomeComponents
+swiper from reach awesomeComponents
 react hook form
-react-simple-captchars
+react-simple-captchars from reach awesomeComponents
 axios
 firebase
 sweetalert2
-react-rating
+react-rating from reach awesomeComponents
