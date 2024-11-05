@@ -1,7 +1,12 @@
 const ShortProfileCart = ({ service }) => {
   const { name, userImg, qualification, category, rating } = service;
   return (
-    <div className="flex justify-between items-center gap-5 border p-4 rounded-lg cursor-pointer hover:translate-y-[-10px] transition-all duration-500">
+    <div
+      onClick={() => {
+        scrollTo(0, 0);
+      }}
+      className="flex justify-between items-center gap-5 border p-4 rounded-lg cursor-pointer hover:translate-y-[-10px] transition-all duration-500"
+    >
       <div className="w-32 h-32 overflow-hidden rounded-b-full rounded-r-full">
         <img
           className="object-cover object-center w-full h-full"

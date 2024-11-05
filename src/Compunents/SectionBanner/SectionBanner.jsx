@@ -11,7 +11,11 @@ const SectionBanner = ({ img, title, descriptions }) => {
       "
       >
         <h1 className="text-4xl text-center lg:font-semibold">{title}</h1>
-        <p className="text-center lg:px-5">{descriptions}</p>
+        {descriptions ? (
+          <p className="text-center lg:px-5">{descriptions}</p>
+        ) : (
+          <></>
+        )}
       </div>
     </div>
   );

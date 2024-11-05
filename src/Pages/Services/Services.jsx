@@ -1,7 +1,56 @@
+import { useEffect, useState } from "react";
+import LargeProfileCart from "../../Compunents/LargeProfileCart/LargeProfileCart";
+import SectionBanner from "../../Compunents/SectionBanner/SectionBanner";
+import img from "../../assets/home/banner.jpg";
+import SectionTitle from "../../Compunents/SectionTitle/SectionTitle";
+import Cart from "../../Compunents/Cart/Cart";
+
 const Services = () => {
+  const [categories, setCategories] = useState([]);
+
+  useEffect(() => {
+    fetch("categories.json")
+      .then((res) => res.json())
+      .then((data) => {
+        setCategories(data);
+      });
+  }, []);
+
+  // TODO: fixe fetch problem using apis (fetch only required item)
+  const [users, setUsers] = useState([]);
+  useEffect(() => {
+    fetch("users.json")
+      .then((res) => res.json())
+      .then((data) => {
+        const allPopularUsers = data.filter((item) => item.rating >= 4.8);
+        const popularUsers = allPopularUsers.slice(0, 8);
+        setUsers(popularUsers);
+      });
+  }, []);
+
   return (
-    <div>
-      <h1>services page</h1>
+    <div className="-mt-20">
+      <SectionBanner title="Our Services" img={img}></SectionBanner>
+      <SectionTitle
+        heading="Top Providers"
+        subHeading="Have a looks"
+      ></SectionTitle>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+        {users.map((user) => (
+          <Cart key={user._id} user={user}></Cart>
+        ))}
+      </div>
+      <div className="mx-auto text-center mt-12">
+        <button className="btn btn-outline btn-success border-0 border-b-4">
+          Show all
+        </button>
+      </div>
+      {categories.map((category) => (
+        <LargeProfileCart
+          key={category._id}
+          category={category}
+        ></LargeProfileCart>
+      ))}
     </div>
   );
 };

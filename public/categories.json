@@ -1,26 +1,77 @@
 [
-    {
-        "_id":"67247392510d906a95dd5df6",
-        "name":"Teacher",
-        "serviceImg":"https://example.com/images/teacher.jpg",
-        "colorPrimary":"#4CAF50",
-        "colorSecondary":"#81C784"
-    },
-    {
-        "_id":"67247392510d906a95dd5df7",
-        "name":"Doctor",
-        "serviceImg":"https://example.com/images/doctor.jpg",
-        "colorPrimary":"#FF5722",
-        "colorSecondary":"#FF8A65"
-    },
-    {
-        "_id":"67247392510d906a95dd5df8",
-        "name":"Lawyer",
-        "serviceImg":"https://example.com/images/lawyer.jpg",
-        "colorPrimary":"#3F51B5",
-        "colorSecondary":"#7986CB"
-    }
+  {
+    "_id": "67247392510d906a95dd5df6",
+    "serviceProviderType": "Teacher",
+    "serviceImg": "https://i.ibb.co.com/3SM8mjs/teacher-Appointment.jpg",
+    "colorPrimary": "#4CAF50",
+    "colorSecondary": "#81C784",
+    "shortDescription": "Skilled tutors providing personalized support across subjects like Math, Science, and Arts for effective learning experiences.",
+    "categories": [
+      { "name": "Math Tutor" },
+      { "name": "Science Tutor" },
+      { "name": "Language Tutor" },
+      { "name": "History Tutor" },
+      { "name": "Music Tutor" },
+      { "name": "Art Tutor" },
+      { "name": "Computer Science Tutor" },
+      { "name": "Physics Tutor" },
+      { "name": "Chemistry Tutor" },
+      { "name": "Biology Tutor" },
+      { "name": "English Literature Tutor" },
+      { "name": "Geography Tutor" },
+      { "name": "Economics Tutor" },
+      { "name": "Philosophy Tutor" },
+      { "name": "Political Science Tutor" }
+    ]
+  },
+  {
+    "_id": "67247392510d906a95dd5df7",
+    "serviceProviderType": "Doctor",
+    "serviceImg": "https://i.ibb.co.com/z8SvBtz/doctor-Appointment.jpg",
+    "colorPrimary": "#FF5722",
+    "colorSecondary": "#FF8A65",
+    "shortDescription": "Medical professionals in various fields offering expert care and consultations, from general practice to specialized treatment.",
+    "categories": [
+      { "name": "General Practitioner" },
+      { "name": "Dentist" },
+      { "name": "Cardiologist" },
+      { "name": "Dermatologist" },
+      { "name": "Pediatrician" },
+      { "name": "Neurologist" },
+      { "name": "Orthopedic Surgeon" },
+      { "name": "Psychiatrist" },
+      { "name": "Oncologist" },
+      { "name": "Ophthalmologist" },
+      { "name": "ENT Specialist" },
+      { "name": "Gastroenterologist" },
+      { "name": "Endocrinologist" },
+      { "name": "Gynecologist" },
+      { "name": "Pulmonologist" }
+    ]
+  },
+  {
+    "_id": "67247392510d906a95dd5df8",
+    "serviceProviderType": "Lawyer",
+    "serviceImg": "https://i.ibb.co.com/NY6x1SG/lawyer-Appointment.jpg",
+    "colorPrimary": "#3F51B5",
+    "colorSecondary": "#7986CB",
+    "shortDescription": "Experienced lawyers providing guidance in areas like family, corporate, and criminal law to meet diverse legal needs.",
+    "categories": [
+      { "name": "Family Lawyer" },
+      { "name": "Corporate Lawyer" },
+      { "name": "Immigration Lawyer" },
+      { "name": "Criminal Lawyer" },
+      { "name": "Intellectual Property Lawyer" },
+      { "name": "Employment Lawyer" },
+      { "name": "Bankruptcy Lawyer" },
+      { "name": "Civil Rights Lawyer" },
+      { "name": "Environmental Lawyer" },
+      { "name": "Real Estate Lawyer" },
+      { "name": "Tax Lawyer" },
+      { "name": "Health Care Lawyer" },
+      { "name": "Contract Lawyer" },
+      { "name": "Entertainment Lawyer" },
+      { "name": "Constitutional Lawyer" }
+    ]
+  }
 ]
-
-
-

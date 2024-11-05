@@ -23,6 +23,7 @@ const Home = () => {
       <PopularServices></PopularServices>
       <ContactNumber></ContactNumber>
       <Featured></Featured>
+      {/* TODO: filter the reviews according to the rating(star) */}
       <Reviews></Reviews>
     </div>
   );
