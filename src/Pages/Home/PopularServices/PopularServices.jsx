@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import SectionTitle from "../../../Compunents/SectionTitle/SectionTitle";
 import ShortProfileCart from "../../../Compunents/ShortProfileCart/ShortProfileCart";
+import { useNavigate } from "react-router-dom";
 
 const PopularServices = () => {
+  const navigate = useNavigate();
   const [services, setServices] = useState([]);
   useEffect(() => {
     fetch("users.json")
@@ -29,7 +31,12 @@ const PopularServices = () => {
         ))}
       </div>
       <div className="mx-auto text-center">
-        <button className="btn btn-outline btn-primary border-0 border-b-4">
+        <button
+          onClick={() => {
+            navigate("/providers"), scrollTo(0, 0);
+          }}
+          className="btn btn-outline btn-primary border-0 border-b-4"
+        >
           Show all
         </button>
       </div>

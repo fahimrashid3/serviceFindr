@@ -26,7 +26,7 @@ const Carousel = () => {
         }}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper h-[600px] lg:h-[600px] "
+        className="mySwiper h-[550px]  "
       >
         <SwiperSlide>
           <img src={img1} className="w-full rounded-xl" />

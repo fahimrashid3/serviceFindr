@@ -21,7 +21,7 @@ const LargeProfileCart = ({ category }) => {
       });
   }, [serviceProviderType]);
   return (
-    <div>
+    <div className="text-dark-900 dark:text-white">
       <div className="mb-10 md:mb-16 lg:mb-20">
         <SectionBanner
           img={serviceImg}
