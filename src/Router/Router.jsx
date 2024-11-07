@@ -4,10 +4,12 @@ import Home from "../Pages/Home/Home/Home";
 import Login from "../Pages/Login/Login";
 import Registration from "../Pages/Registration/Registration";
 import Services from "../Pages/Services/Services";
-import ContactUs from "../Pages/ContactUs/ContactUs";
-import Appointment from "../Pages/Appointment/Appointment";
-import Dashboard from "../Pages/Dashboard/Dashboard";
+
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
+import ContactUs from "../Pages/ContactUs/ContactUs/ContactUs";
+import Appointment from "../Pages/Appointment/Appointment/Appointment";
+import Dashboard from "../Pages/Dashboard/Dashboard/Dashboard";
+import AllProviders from "../Pages/AllProviders/AllProviders/AllProviders";
 
 const router = createBrowserRouter([
   {
@@ -42,6 +44,10 @@ const router = createBrowserRouter([
       {
         path: "/dashboard",
         element: <Dashboard></Dashboard>,
+      },
+      {
+        path: "/providers",
+        element: <AllProviders></AllProviders>,
       },
     ],
   },

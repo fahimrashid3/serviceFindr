@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import SectionBanner from "../SectionBanner/SectionBanner";
 import Cart from "../Cart/Cart";
+import { Link } from "react-router-dom";
 
 // TODO: show all button not working
 
@@ -34,9 +35,12 @@ const LargeProfileCart = ({ category }) => {
         ))}
       </div>
       <div className="mx-auto text-center mt-12">
-        <button className="btn btn-outline btn-success border-0 border-b-4">
+        <Link
+          to="/providers"
+          className="btn btn-outline btn-success border-0 border-b-4 lg:mb-20 md:mb-16 mb-8"
+        >
           Show all
-        </button>
+        </Link>
       </div>
     </div>
   );

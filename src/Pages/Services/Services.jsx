@@ -4,6 +4,8 @@ import SectionBanner from "../../Compunents/SectionBanner/SectionBanner";
 import img from "../../assets/home/banner.jpg";
 import SectionTitle from "../../Compunents/SectionTitle/SectionTitle";
 import Cart from "../../Compunents/Cart/Cart";
+import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   const [categories, setCategories] = useState([]);
@@ -30,6 +32,9 @@ const Services = () => {
 
   return (
     <div className="-mt-20">
+      <Helmet>
+        <title>ServiceFinder | Services</title>
+      </Helmet>
       <SectionBanner title="Our Services" img={img}></SectionBanner>
       <SectionTitle
         heading="Top Providers"
@@ -41,9 +46,12 @@ const Services = () => {
         ))}
       </div>
       <div className="mx-auto text-center mt-12">
-        <button className="btn btn-outline btn-success border-0 border-b-4">
+        <Link
+          to="/providers"
+          className="btn btn-outline btn-success border-0 border-b-4 lg:mb-20 md:mb-16 mb-8"
+        >
           Show all
-        </button>
+        </Link>
       </div>
       {categories.map((category) => (
         <LargeProfileCart

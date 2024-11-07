@@ -1,7 +1,7 @@
 const SectionBanner = ({ img, title, descriptions }) => {
   return (
     <div
-      className="lg:px-[15%] md:px-[10%] px-[5%] lg:py-20 md:py-12 py-7 lg:mt-20 md:mt-12 mt-7 rounded-lg bg-cover"
+      className="lg:px-[15%] md:px-[10%] px-[5%] lg:py-20 md:py-12 py-7 lg:mt-20 md:mt-12 mt-7 rounded-lg bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${img})` }}
     >
       <div
