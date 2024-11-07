@@ -1,5 +1,8 @@
+import { useNavigate } from "react-router-dom";
+
 const Cart = ({ user }) => {
-  const { userImg, category, name, qualification } = user;
+  const navigate = useNavigate();
+  const { _id, userImg, category, name, qualification } = user;
   return (
     <div className="overflow-hidden cursor-pointer hover:translate-y-[-10px] transition-all duration-500">
       <div className="card card-compact bg-base-100 shadow-xl">
@@ -12,7 +15,12 @@ const Cart = ({ user }) => {
           <p>{qualification}</p>
           <div className="flex items-center card-actions justify-end">
             <p>{category}</p>
-            <button className="btn btn-success btn-outline">
+            <button
+              onClick={() => {
+                navigate(`/fullProfile/${_id}`);
+              }}
+              className="btn btn-success btn-outline"
+            >
               View Full Profile
             </button>
           </div>

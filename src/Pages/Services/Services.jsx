@@ -1,34 +1,21 @@
-import { useEffect, useState } from "react";
 import LargeProfileCart from "../../Compunents/LargeProfileCart/LargeProfileCart";
 import SectionBanner from "../../Compunents/SectionBanner/SectionBanner";
 import img from "../../assets/home/banner.jpg";
 import SectionTitle from "../../Compunents/SectionTitle/SectionTitle";
 import Cart from "../../Compunents/Cart/Cart";
 import { Helmet } from "react-helmet";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import useCategories from "../../hooks/useCategories";
+import useUsers from "../../hooks/useUsers";
 
 const Services = () => {
-  const [categories, setCategories] = useState([]);
-
-  useEffect(() => {
-    fetch("categories.json")
-      .then((res) => res.json())
-      .then((data) => {
-        setCategories(data);
-      });
-  }, []);
+  const navigate = useNavigate();
+  const [categories] = useCategories();
+  const [users] = useUsers();
+  const allPopularUsers = users.filter((item) => item.rating >= 4.8);
+  const popularUsers = allPopularUsers.slice(0, 8);
 
   // TODO: fixe fetch problem using apis (fetch only required item)
-  const [users, setUsers] = useState([]);
-  useEffect(() => {
-    fetch("users.json")
-      .then((res) => res.json())
-      .then((data) => {
-        const allPopularUsers = data.filter((item) => item.rating >= 4.8);
-        const popularUsers = allPopularUsers.slice(0, 8);
-        setUsers(popularUsers);
-      });
-  }, []);
 
   return (
     <div className="-mt-20">
@@ -41,17 +28,17 @@ const Services = () => {
         subHeading="Have a looks"
       ></SectionTitle>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-        {users.map((user) => (
+        {popularUsers.map((user) => (
           <Cart key={user._id} user={user}></Cart>
         ))}
       </div>
       <div className="mx-auto text-center mt-12">
-        <Link
-          to="/providers"
+        <button
+          onClick={() => navigate("/providers")}
           className="btn btn-outline btn-success border-0 border-b-4 lg:mb-20 md:mb-16 mb-8"
         >
           Show all
-        </Link>
+        </button>
       </div>
       {categories.map((category) => (
         <LargeProfileCart

@@ -10,6 +10,7 @@ import ContactUs from "../Pages/ContactUs/ContactUs/ContactUs";
 import Appointment from "../Pages/Appointment/Appointment/Appointment";
 import Dashboard from "../Pages/Dashboard/Dashboard/Dashboard";
 import AllProviders from "../Pages/AllProviders/AllProviders/AllProviders";
+import FullProfile from "../Pages/FullProfile/FullProfile";
 
 const router = createBrowserRouter([
   {
@@ -52,6 +53,10 @@ const router = createBrowserRouter([
       {
         path: "/providers/:category",
         element: <AllProviders />,
+      },
+      {
+        path: "/fullProfile/:_id",
+        element: <FullProfile />,
       },
     ],
   },
