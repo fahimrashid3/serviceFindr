@@ -1,6 +1,6 @@
 import LargeProfileCart from "../../Compunents/LargeProfileCart/LargeProfileCart";
 import SectionBanner from "../../Compunents/SectionBanner/SectionBanner";
-import img from "../../assets/home/banner.jpg";
+import img from "../../assets/services/teacherSectinBanner.png";
 import SectionTitle from "../../Compunents/SectionTitle/SectionTitle";
 import Cart from "../../Compunents/Cart/Cart";
 import { Helmet } from "react-helmet";
@@ -27,7 +27,10 @@ const Services = () => {
         heading="Top Providers"
         subHeading="Have a looks"
       ></SectionTitle>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div
+        id="topProviders"
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5"
+      >
         {popularUsers.map((user) => (
           <Cart key={user._id} user={user}></Cart>
         ))}

@@ -2,15 +2,15 @@ import { useEffect, useState } from "react";
 
 const useUsers = () => {
   const [users, setUsers] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [usersLoading, setUsersLoading] = useState(true);
   useEffect(() => {
-    fetch("users.json")
+    fetch("http://localhost:5000/users")
       .then((res) => res.json())
       .then((data) => {
         setUsers(data);
-        setLoading(false);
+        setUsersLoading(false);
       });
   }, []);
-  return [users, loading];
+  return [users, usersLoading];
 };
 export default useUsers;

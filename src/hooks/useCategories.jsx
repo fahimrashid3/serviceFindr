@@ -2,22 +2,22 @@ import { useEffect, useState } from "react";
 
 const useCategories = () => {
   const [categories, setCategories] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [categoriesLoading, setCategoriesLoading] = useState(true);
 
   useEffect(() => {
-    fetch("categories.json")
+    fetch("http://localhost:5000/categories")
       .then((res) => res.json())
       .then((data) => {
         setCategories(data);
-        setLoading(false);
+        setCategoriesLoading(false);
       })
       .catch((error) => {
         console.error("Error fetching categories:", error);
-        setLoading(false);
+        setCategoriesLoading(false);
       });
   }, []);
 
-  return [categories, loading];
+  return [categories, categoriesLoading];
 };
 
 export default useCategories;

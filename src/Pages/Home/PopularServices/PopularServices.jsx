@@ -24,7 +24,7 @@ const PopularServices = () => {
       <div className="mx-auto text-center">
         <button
           onClick={() => {
-            navigate("/providers"), scrollTo(0, 0);
+            navigate("/services"), scrollTo(0, 0);
           }}
           className="btn btn-outline btn-primary border-0 border-b-4"
         >
